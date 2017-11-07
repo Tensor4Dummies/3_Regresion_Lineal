@@ -26,6 +26,10 @@ La regresión lineal se usa para hacer predicción de variables cuantitativas, p
 * Permite determinar cuales son los coeficientes b0 y b1 que relacionan linealmente la variable de entrada (X) con la variable de salida (Y).  
 * El coeficiente b0 o constante es el valor que toma la variable de salida (Y) cuand la variable de entrada (X) vale 0.  
 * Elcoeficiente b1 multiplica a la variable de entrada (X) y por tanto va a determinar la inclinación de la recta. A mayor b1 la recta tendrá una mayor inclinación y por tanto pequeños cambios en la variable de entrada (X) generan cambios grandes en la variable de salida (Y).  
+  
+![grafica1](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/350px-Linear_regression.svg.png) 
+* Hay infinitas posibles rectas por lo que se necesita encontrar aquella que minimice las distancias entre los valores observados y los predichos por la ecuación.  
+* Esta recta se obtiene mediante un proceso matemático conocido como mínimos cuadrados.  
 
 #### Regresión Lineal Múltiple
 ## Ejemplo de regresión lineal simple
