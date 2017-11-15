@@ -4,7 +4,8 @@
 - [Tipos de Modelos de Regresión Lineal](#tipos-de-modelos-de-regresión-lineal)
 	- [Regresión Lineal Simple](#regresión-lineal-simple)
 	- [Regresión Lineal Múltiple](#regresión-lineal-múltiple)
-
+- [Ejemplo Regresión Lineal Múltiple](#ejemplo-regresión-lineal-múltiple)
+- [Ejemplo en tensorflow](#ejemplo-en-tensorflow)
 ## Introducción
 La regresión lineal es una técnica estadística utilizada para medir la relación entre variables. Su interés radica en que el algoritmo que lo implementa no es complejo conceptualmente, y además se adapta a una amplia variedad de situaciones.  
 Es un modelo matemático usado para aproximar la relación de dependencia entre una variable dependiente Y, las variables independientes Xi y un término aleatorio ε. Este modelo puede ser expresado como:
@@ -39,6 +40,9 @@ La regresión lineal se usa para hacer predicción de variables cuantitativas, p
 * Con tres variables explicativas tendríamos un espacio de tres dimensiones, y así sucesivamente.  
   
 ![RLMG](https://dlegorreta.files.wordpress.com/2015/09/regression_lineal.png)  
+
+## Ejemplo Regresión Lineal  
+## Ejemplo en Tensorflow  
 
 
 
