@@ -5,7 +5,7 @@
 	- [Regresión Lineal Simple](#regresión-lineal-simple)
 	- [Regresión Lineal Múltiple](#regresión-lineal-múltiple)
 
-##Introducción
+## Introducción
 La regresión lineal es una técnica estadística utilizada para medir la relación entre variables. Su interés radica en que el algoritmo que lo implementa no es complejo conceptualmente, y además se adapta a una amplia variedad de situaciones.  
 Es un modelo matemático usado para aproximar la relación de dependencia entre una variable dependiente Y, las variables independientes Xi y un término aleatorio ε. Este modelo puede ser expresado como:
  ![formula](https://wikimedia.org/api/rest_v1/media/math/render/svg/604ec4765565e5860d9642d5a1c83c21b2975fbe)  
@@ -27,4 +27,18 @@ La regresión lineal se usa para hacer predicción de variables cuantitativas, p
 * Hay infinitas posibles rectas por lo que se necesita encontrar aquella que minimice las distancias entre los valores observados y los predichos por la ecuación.  
 * Esta recta se obtiene mediante un proceso matemático conocido como mínimos cuadrados.  
   
-### Regresión Lineal Múltiple
+### Regresión Lineal Múltiple  
+
+* Sigue el mismo modelo que la regresión lineal simple solo que ampliamos la ecuación, en vez de tener una variable de entrada o predictora, tenemos multiples.  
+* Esto nos va a ofrecer la ventaja de utilizar más información en la construcción del modelo y, consecuentemente, realizar estimaciones más precisas.
+
+![RLMF](https://mnshankar.files.wordpress.com/2011/05/equation.gif)  
+* En definitiva, y al igual que en regresión lineal simple, vamos a considerar que los valores de la variable dependiente Y han sido generados por una combinación lineal de los valores de una o más variables explicativas y un término aleatorio.  
+* Los coeficientes son elegidos de forma que la suma de cuadrados entre los valores observados y los pronosticados sea mínima, es decir, que se va a minimizar la varianza residual.  
+* Esta ecuación recibe el nombre de hiperplano, pues cuando tenemos dos variables explicativas, en vez de recta de regresión tenemos un plano.  
+* Con tres variables explicativas tendríamos un espacio de tres dimensiones, y así sucesivamente.  
+  
+![RLMG](https://dlegorreta.files.wordpress.com/2015/09/regression_lineal.png)  
+
+
+
