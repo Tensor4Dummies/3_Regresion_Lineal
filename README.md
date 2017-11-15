@@ -32,7 +32,16 @@ La regresión lineal se usa para hacer predicción de variables cuantitativas, p
 * Esta recta se obtiene mediante un proceso matemático conocido como mínimos cuadrados.  
 
 #### Regresión Lineal Múltiple  
-* Sigue el mismo modelo que la regresión lineal simple solo que ampliamos la ecuación, en vez de tener una variable de entrada o predictora tenemos multiples.
+* Sigue el mismo modelo que la regresión lineal simple solo que ampliamos la ecuación, en vez de tener una variable de entrada o predictora, tenemos multiples.  
+* Esto nos va a ofrecer la ventaja de utilizar más información en la construcción del modelo y, consecuentemente, realizar estimaciones más precisas.
+
+![RLMF](https://mnshankar.files.wordpress.com/2011/05/equation.gif)  
+* En definitiva, y al igual que en regresión lineal simple, vamos a considerar que los valores de la variable dependiente Y han sido generados por una combinación lineal de los valores de una o más variables explicativas y un término aleatorio.  
+* Los coeficientes son elegidos de forma que la suma de cuadrados entre los valores observados y los pronosticados sea mínima, es decir, que se va a minimizar la varianza residual.  
+* Esta ecuación recibe el nombre de hiperplano, pues cuando tenemos dos variables explicativas, en vez de recta de regresión tenemos un plano.  
+* Con tres variables explicativas tendríamos un espacio de tres dimensiones, y así sucesivamente.  
+  
+![RLMG](https://dlegorreta.files.wordpress.com/2015/09/regression_lineal.png)  
 ## Ejemplo de regresión lineal simple
 
 
