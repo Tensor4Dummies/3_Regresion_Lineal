@@ -11,6 +11,7 @@
 	- [Comprobación datos introducidos](#Comprobación-datos-introducidos)  
 	- [Preparación del resto de datos antes del entreno](#preparación-del-resto-de-datos-antes-del-entreno)
 	- [Entrenamiento](#entrenamiento)
+	- [Ejemplo datos aleatorios](#ejemplo-datos-aleatorios)
 
   
 ## Introducción
@@ -179,6 +180,11 @@ Por último mostramos la recta de regresión calculada.
     plt.show()
 ````
 <center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/regresion.PNG" alt="regresion">  </center>
+
+### Ejemplo datos aleatorios
+<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/ejemplo2.PNG" alt="regresion">  </center>
+<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/regresion2.PNG" alt="regresion">  </center>
+
 
 
 
