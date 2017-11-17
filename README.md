@@ -44,7 +44,12 @@ La regresión lineal se usa para hacer predicción de variables cuantitativas, p
 ## Ejemplo Regresión Lineal  
 <p>
 <img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/tabla.PNG" alt="Tabla">  
+<img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/operacion1.PNG" alt="operacion1">  
+<img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/operacion2.PNG" alt="operacion2">  
+<img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/operacion3.PNG" alt="operacion3">  
+<img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/grafica.PNG" alt="grafica">  
 </p>
+  
 ## Ejemplo en Tensorflow  
 
 
