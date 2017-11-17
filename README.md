@@ -6,6 +6,10 @@
 	- [Regresión Lineal Múltiple](#regresión-lineal-múltiple)
 - [Ejemplo Regresión Lineal](#ejemplo-regresión-lineal)
 - [Ejemplo en tensorflow](#ejemplo-en-tensorflow)
+	- [1.Importación de librerias](#1.importación-de-librerias)  
+	- [2.Declaración de las variables](2.declaración-de-las-variables)  
+
+  
 ## Introducción
 La regresión lineal es una técnica estadística utilizada para medir la relación entre variables. Su interés radica en que el algoritmo que lo implementa no es complejo conceptualmente, y además se adapta a una amplia variedad de situaciones.  
 Es un modelo matemático usado para aproximar la relación de dependencia entre una variable dependiente Y, las variables independientes Xi y un término aleatorio ε. Este modelo puede ser expresado como:
@@ -68,6 +72,38 @@ Podemos así determinar que el pronóstico de ventas para el período 7 es equiv
 </p>
   
 ## Ejemplo en Tensorflow  
+
+Una vez visto un ejemplo práctico vamos a implementar un ejemplo en Tensoflow, tomaremos para ello los datos del ejemplo anterior. Usaremos Python y la librería de TensorFlow, además de la librería NumPy para realizar algún cálculo más complejo y la librería MatPlotLib, para poder ver el resultado final de manera gráfica.
+
+### 1.Importación de librerias
+El primer paso será importar las librerias que necesitamos utilizar durante el programa.
+```
+import tensorflow as tf
+import numpy
+import math
+import matplotlib.pyplot as plt
+rng = numpy.random
+```  
+  
+  ### 2.Declaración de las variables
+El siguiente paso será declarar las variables que vamos a usar. En un primer grupo declararemos el gradiente de aprendizaje, las iteraciones que se darán como aprendizaje, cada cuanto se mostrarán y por último el número de meses de los que tenemos información(este último se puede omitir).
+```
+# Parametros
+gradiente_aprendizaje = 0.1
+iteraciones= 100
+display_step = 1
+meses = 6
+````
+
+A continuación definimos los datos a entrenar train_X serán los meses y train_Y el número de ventas realizadas por mes. Por último tomaremos el tamaño de uno de estos arrays para saber el número de datos que tenemos.
+````
+#Definir los datos de entrenamiento (train)
+train_X = numpy.asarray([1,2,3,4,5,6])
+train_Y = numpy.asarray([7000,9000,5000,11000,10000,13000])
+n_samples = train_X.shape[0] #tamaño del array
+
+```
+
 
 
 
