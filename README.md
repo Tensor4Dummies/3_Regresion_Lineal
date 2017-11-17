@@ -7,9 +7,10 @@
 - [Ejemplo Regresión Lineal](#ejemplo-regresión-lineal)
 - [Ejemplo en tensorflow](#ejemplo-en-tensorflow)
 	- [1.Importación de librerias](#1.importación-de-librerias)  
-	- [2.Declaración de las variables](2.declaración-de-las-variables)  
-	- [3.Comprobación datos introducidos](3.Comprobación-datos-introducidos)  
-	- [4.Preparación del resto de datos antes del entreno](4.preparación-del-resto-de-datos-antes-del-entreno)
+	- [2.Declaración de las variables](#2.declaración-de-las-variables)  
+	- [3.Comprobación datos introducidos](#3.Comprobación-datos-introducidos)  
+	- [4.Preparación del resto de datos antes del entreno](#4.preparación-del-resto-de-datos-antes-del-entreno)
+	- [5.Entrenamiento](#5.entrenamiento)
 
   
 ## Introducción
@@ -141,6 +142,44 @@ optimizer = tf.train.GradientDescentOptimizer(gradiente_aprendizaje).minimize(co
 init = tf.global_variables_initializer()
 
 ````
+### 5. Entrenamiento
+Como vamos a usar Tensorflow lo primero que haremos sera crear la sesión y dentro de ella lanzar el inicializador de las variables.
+````
+with tf.Session() as sess:
+
+    # ejecutamos el inicializador
+    sess.run(init)
+````
+Lo siguiente que haremos sera ajustar los datos de entrenamiento:
+````
+    # Ajustamos datos de entrenamiento
+    for epoch in range(iteraciones):
+        for (x, y) in zip(train_X, train_Y):
+            sess.run(optimizer, feed_dict={X: x, Y: y})
+````
+Dejamos un registro (log) en el terminal de los valores entrenados y sus resultados:
+````
+        # Mostramos en pantalla los registros por cada paso (log)
+        if (epoch+1) % display_step == 0:
+            c = sess.run(cost, feed_dict={X: train_X, Y:train_Y})
+            print("Epoch:", '%04d' % (epoch+1), "cost=", "{:.9f}".format(c), \
+                "W=", sess.run(W), "b=", sess.run(b))
+    print("Optimización finalizada!")
+    training_cost = sess.run(cost, feed_dict={X: train_X, Y: train_Y})
+    print("Training cost=", training_cost, "W=", sess.run(W), "b=", sess.run(b), '\n')
+````
+Por último mostramos la recta de regresión calculada.
+````
+    # Mostramos resultados
+    plt.plot(train_X, train_Y, 'ro', label='Datos Originales')
+    plt.xlabel("Mes")
+    plt.ylabel("Ventas")
+    plt.plot(train_X, sess.run(W) * train_X + sess.run(b), label='Recta de regresion')
+    plt.legend()
+    plt.show()
+````
+<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/regresion.png" alt="regresion">  </center>
+
 
 
 
