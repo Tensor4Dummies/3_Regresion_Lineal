@@ -40,8 +40,12 @@ Donde ![B0](https://wikimedia.org/api/rest_v1/media/math/render/svg/40b42f71f244
 * Esta ecuación recibe el nombre de hiperplano, pues cuando tenemos dos variables explicativas, en vez de recta de regresión tenemos un plano.  
 * Con tres variables explicativas tendríamos un espacio de tres dimensiones, y así sucesivamente.  
   
-<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/grafi.png" alt="grafica">  </center>
+<p>
+<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/grafi.png" alt="grafica">  </center>  
+</p>  
+
 ## Ejemplo Regresión Lineal  
+
 <p>
 Veamos ahora un ejemplo de regresion lineal simple. Para ello tomamos los valores indicados en la tabla de abajo donde podemos observar las ventas de un producto "x" durante los primeros seis meses del año, y con estos datos intentaremos hallar el pronostico del mes de Julio.
 <center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/tabla.PNG" alt="Tabla">  </center>
