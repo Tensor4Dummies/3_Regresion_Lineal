@@ -182,7 +182,9 @@ Por último mostramos la recta de regresión calculada.
 <center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/regresion.PNG" alt="regresion">  </center>
 
 ### Ejemplo datos aleatorios
+A continuación vemos un ejemplo con datos generados aleatoriamente donde en un rango de variables fijas de 1 a 49 se han otorgado aleatoriamente valores.
 <center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/ejemplo2.PNG" alt="regresion">  </center>
+Una vez generados los valores procedemos a entrenarlos para obtener así la recta de regresión.
 <center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/regresion2.PNG" alt="regresion">  </center>
 
 
