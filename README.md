@@ -6,11 +6,11 @@
 	- [Regresión Lineal Múltiple](#regresión-lineal-múltiple)
 - [Ejemplo Regresión Lineal](#ejemplo-regresión-lineal)
 - [Ejemplo en tensorflow](#ejemplo-en-tensorflow)
-	- [1.Importación de librerias](#importación-de-librerias)  
-	- [2.Declaración de las variables](#declaración-de-las-variables)  
-	- [3.Comprobación datos introducidos](#Comprobación-datos-introducidos)  
-	- [4.Preparación del resto de datos antes del entreno](#preparación-del-resto-de-datos-antes-del-entreno)
-	- [5.Entrenamiento](#entrenamiento)
+	- [Importación de librerias](#importación-de-librerias)  
+	- [Declaración de las variables](#declaración-de-las-variables)  
+	- [Comprobación datos introducidos](#Comprobación-datos-introducidos)  
+	- [Preparación del resto de datos antes del entreno](#preparación-del-resto-de-datos-antes-del-entreno)
+	- [Entrenamiento](#entrenamiento)
 
   
 ## Introducción
@@ -78,7 +78,7 @@ Podemos así determinar que el pronóstico de ventas para el período 7 es equiv
 
 Una vez visto un ejemplo práctico vamos a implementar un ejemplo en Tensoflow, tomaremos para ello los datos del ejemplo anterior. Usaremos Python y la librería de TensorFlow, además de la librería NumPy para realizar algún cálculo más complejo y la librería MatPlotLib, para poder ver el resultado final de manera gráfica.
 
-### 1.Importación de librerias
+### Importación de librerias
 El primer paso será importar las librerias que necesitamos utilizar durante el programa.
 ```
 import tensorflow as tf
@@ -88,7 +88,7 @@ import matplotlib.pyplot as plt
 rng = numpy.random
 ```  
   
-  ### 2.Declaración de las variables
+  ### Declaración de las variables
 El siguiente paso será declarar las variables que vamos a usar. En un primer grupo declararemos el gradiente de aprendizaje, las iteraciones que se darán como aprendizaje, cada cuanto se mostrarán y por último el número de meses de los que tenemos información(este último se puede omitir).
 ```
 # Parametros
@@ -107,7 +107,7 @@ train_Y = numpy.asarray([7000,9000,5000,11000,10000,13000])
 n_samples = train_X.shape[0] #tamaño del array
 ```
 
-### 3.Comprobación datos introducidos
+### Comprobación datos introducidos
 En este apartado comprobamos gráficamente los datos que se tiene en el momento de llevar el estudio a cabo.
 ````
 #Visualización de los datos
@@ -118,7 +118,7 @@ plt.show()
 ````
 <center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/datos.png" alt="grafica">  </center>
 
-### 4. Preparación del resto de datos antes del entreno.
+### Preparación del resto de datos antes del entreno.
 Seguidamente crearemos los Placeholders (explicados en el apartado 1_Tensores). Asignamos valores aleatorios a las variables de entreno, se contruye el modelo lineal, calculamos la media del error de los cuadrados y el descenso de gradiente y por último inicializamos las variables.
 ````
 #Creamos los Placeholders
@@ -142,7 +142,7 @@ optimizer = tf.train.GradientDescentOptimizer(gradiente_aprendizaje).minimize(co
 init = tf.global_variables_initializer()
 
 ````
-### 5. Entrenamiento
+### Entrenamiento
 Como vamos a usar Tensorflow lo primero que haremos sera crear la sesión y dentro de ella lanzar el inicializador de las variables.
 ````
 with tf.Session() as sess:
