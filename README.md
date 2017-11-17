@@ -115,12 +115,12 @@ plt.xlabel("Mes")
 plt.ylabel("Ventas")
 plt.show()
 ````
-<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/datos.PNG" alt="grafica">  </center>
+<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/datos.png" alt="grafica">  </center>
 
 ### 4. Preparación del resto de datos antes del entreno.
-Seguidamente 
+Seguidamente crearemos los Placeholders (explicados en el apartado 1_Tensores). Asignamos valores aleatorios a las variables de entreno, se contruye el modelo lineal, calculamos la media del error de los cuadrados y el descenso de gradiente y por último inicializamos las variables.
 ````
-#Creamos los Placeholders para actualizar  el gradiente
+#Creamos los Placeholders
 X = tf.placeholder("float", name="Mes")
 Y = tf.placeholder("float", name="Ventas")
 
