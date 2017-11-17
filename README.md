@@ -8,6 +8,8 @@
 - [Ejemplo en tensorflow](#ejemplo-en-tensorflow)
 	- [1.Importación de librerias](#1.importación-de-librerias)  
 	- [2.Declaración de las variables](2.declaración-de-las-variables)  
+	- [3.Comprobación datos introducidos](3.Comprobación-datos-introducidos)  
+	- [4.Preparación del resto de datos antes del entreno](4.preparación-del-resto-de-datos-antes-del-entreno)
 
   
 ## Introducción
@@ -96,13 +98,49 @@ meses = 6
 ````
 
 A continuación definimos los datos a entrenar train_X serán los meses y train_Y el número de ventas realizadas por mes. Por último tomaremos el tamaño de uno de estos arrays para saber el número de datos que tenemos.
-````
+
+```
 #Definir los datos de entrenamiento (train)
 train_X = numpy.asarray([1,2,3,4,5,6])
 train_Y = numpy.asarray([7000,9000,5000,11000,10000,13000])
 n_samples = train_X.shape[0] #tamaño del array
-
 ```
+
+### 3.Comprobación datos introducidos
+En este apartado comprobamos gráficamente los datos que se tiene en el momento de llevar el estudio a cabo.
+````
+#Visualización de los datos
+plt.plot(train_X, train_Y, "ro") #ro =rojo O
+plt.xlabel("Mes")
+plt.ylabel("Ventas")
+plt.show()
+````
+<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/datos.PNG" alt="grafica">  </center>
+
+### 4. Preparación del resto de datos antes del entreno.
+Seguidamente 
+````
+#Creamos los Placeholders para actualizar  el gradiente
+X = tf.placeholder("float", name="Mes")
+Y = tf.placeholder("float", name="Ventas")
+
+# Creamos las variables de entreno
+W = tf.Variable(rng.randn(), name="peso")
+b = tf.Variable(rng.randn(), name="parciales")
+
+# Construimos el modelo lineal
+pred = tf.add(tf.multiply(X, W), b)
+
+# Calculamos la media del error cuadrado
+cost = tf.reduce_sum(tf.pow(pred-Y, 2))/(2*n_samples)
+
+#  Calculamos el descenso de gradiente
+optimizer = tf.train.GradientDescentOptimizer(gradiente_aprendizaje).minimize(cost)
+
+# Inicializamos las variables
+init = tf.global_variables_initializer()
+
+````
 
 
 
