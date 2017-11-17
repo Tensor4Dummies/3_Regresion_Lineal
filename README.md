@@ -24,7 +24,7 @@ Donde ![B0](https://wikimedia.org/api/rest_v1/media/math/render/svg/40b42f71f244
 * El coeficiente b0 o constante es el valor que toma la variable de salida (Y) cuand la variable de entrada (X) vale 0.  
 * El coeficiente b1 multiplica a la variable de entrada (X) y por tanto va a determinar la inclinación de la recta. A mayor b1 la recta tendrá una mayor inclinación y por tanto pequeños cambios en la variable de entrada (X) generan cambios grandes en la variable de salida (Y).  
   
-<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/grafica_ejemplo.PNG" alt="grafica">  </center>
+<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/grafica_ejemplo.png" alt="grafica">  </center>
 * Hay infinitas posibles rectas por lo que se necesita encontrar aquella que minimice las distancias entre los valores observados y los predichos por la ecuación.  
 * Esta recta se obtiene mediante un proceso matemático conocido como mínimos cuadrados.  
   
@@ -33,14 +33,14 @@ Donde ![B0](https://wikimedia.org/api/rest_v1/media/math/render/svg/40b42f71f244
 * Sigue el mismo modelo que la regresión lineal simple solo que ampliamos la ecuación, en vez de tener una variable de entrada o predictora, tenemos multiples.  
 * Esto nos va a ofrecer la ventaja de utilizar más información en la construcción del modelo y, consecuentemente, realizar estimaciones más precisas.
 
-<center>![RLMF](https://mnshankar.files.wordpress.com/2011/05/equation.gif)  </center>
+<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/ecuacionj1.gif" alt="ecuacion1">  </center>
+
 * En definitiva, y al igual que en regresión lineal simple, vamos a considerar que los valores de la variable dependiente Y han sido generados por una combinación lineal de los valores de una o más variables explicativas y un término aleatorio.  
 * Los coeficientes son elegidos de forma que la suma de cuadrados entre los valores observados y los pronosticados sea mínima, es decir, que se va a minimizar la varianza residual.  
 * Esta ecuación recibe el nombre de hiperplano, pues cuando tenemos dos variables explicativas, en vez de recta de regresión tenemos un plano.  
 * Con tres variables explicativas tendríamos un espacio de tres dimensiones, y así sucesivamente.  
   
-<center>![RLMG](https://dlegorreta.files.wordpress.com/2015/09/regression_lineal.png)  </center>
-
+<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/grafi.png" alt="grafica">  </center>
 ## Ejemplo Regresión Lineal  
 <p>
 Veamos ahora un ejemplo de regresion lineal simple. Para ello tomamos los valores indicados en la tabla de abajo donde podemos observar las ventas de un producto "x" durante los primeros seis meses del año, y con estos datos intentaremos hallar el pronostico del mes de Julio.
