@@ -24,7 +24,7 @@ Donde ![B0](https://wikimedia.org/api/rest_v1/media/math/render/svg/40b42f71f244
 * El coeficiente b0 o constante es el valor que toma la variable de salida (Y) cuand la variable de entrada (X) vale 0.  
 * El coeficiente b1 multiplica a la variable de entrada (X) y por tanto va a determinar la inclinación de la recta. A mayor b1 la recta tendrá una mayor inclinación y por tanto pequeños cambios en la variable de entrada (X) generan cambios grandes en la variable de salida (Y).  
   
-<center>![grafica1](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/350px-Linear_regression.svg.png) </center>
+<center><img src="https://github.com/Tensor4Dummies/3_Regresion_Lineal/blob/master/images/grafica_ejemplo.PNG" alt="grafica">  </center>
 * Hay infinitas posibles rectas por lo que se necesita encontrar aquella que minimice las distancias entre los valores observados y los predichos por la ecuación.  
 * Esta recta se obtiene mediante un proceso matemático conocido como mínimos cuadrados.  
   
