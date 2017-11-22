@@ -27,7 +27,7 @@ Donde ![B0](https://wikimedia.org/api/rest_v1/media/math/render/svg/40b42f71f244
  La regresión lineal se usa para hacer predicción de variables cuantitativas, principalmente, y, aunque pueda parecer una técnica simple, sigue estando vigente pues se puede aplicar de forma sencilla a multitud de problemas. Además, sirve como punto de entrada para definir técnicas más complejas y sofisticadas dentro del análisis de regresión.
 ## Tipos de modelos de Regresión Lineal
 ### Regresión Lineal Simple
-![formula1](http://www.monografias.com/trabajos82/agresividad-infantil-ecuador/image004.jpg)
+![formula1](http://www.monografias.com/trabajos82/agresividad-infantil-ecuador/image004.jpg)  
 * Permite determinar cuales son los coeficientes b0 y b1 que relacionan linealmente la variable de entrada (X) con la variable de salida (Y).  
 * El coeficiente b0 o constante es el valor que toma la variable de salida (Y) cuand la variable de entrada (X) vale 0.  
 * El coeficiente b1 multiplica a la variable de entrada (X) y por tanto va a determinar la inclinación de la recta. A mayor b1 la recta tendrá una mayor inclinación y por tanto pequeños cambios en la variable de entrada (X) generan cambios grandes en la variable de salida (Y).  
